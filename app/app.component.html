@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="mainNav">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <a class="nav-link" routerLink="">Kezdőoldal</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/shop">Kínálat</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/about">Rólam</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/login">Bejelentkezés</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="masthead">
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 id="homeHeading">Népi ékszerek</h1>
+      <hr>
+      <p>Horgolt és kötött ruházatot különféle horgolt, hímzett lakás-kiegészítőket találsz, egytől-egyig általam készítve</p>
+      <a class="btn btn-primary btn-xl" routerLink="/shop">MEGNÉZEM</a>
+    </div>
+  </div>
+</header>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Elhelyezkedés</h3>
+              <p>3580 Tiszaújváros
+                <br>Örösi út 4. I./2.</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Kapcsolatok</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" target="_blank" href="https://www.facebook.com/AmbrusValeriaAV">
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="mailto:ambrusvaleria@gmail.com">
+                    <i class="fa fa-fw fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" target="_blank" href="https://hu.pinterest.com/ambrusvaleria/">
+                    <i class="fa fa-fw fa-pinterest-p"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Ambrus Valéria</h3>
+              <p><img src="./img/ambrusvaleria.png"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
